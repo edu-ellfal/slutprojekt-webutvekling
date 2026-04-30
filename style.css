@@ -8,12 +8,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  width: 50%;
+.Container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+  width: 90%;
+  margin: 40px auto;
 }
 
 h1 {
@@ -23,35 +24,29 @@ h1 {
   padding: 5%;
 }
 
-
 .proteinkällan img {
   width: 100%;
   display: block;
   height: auto;
 }
 
-.links
-{
+.links {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   list-style-type: none;
   margin: 0;
-  gap: 10px;
-  font-size: 35px;
+  gap: 7px;
+  font-size: 20px;
 }
-  
-
-
 
 .meny {
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-    display: flex;  
-    height: 75px;
-    align-items: center;
-    padding: 10px;
- 
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding: 8px;
 }
 
 .hero {
