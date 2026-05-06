@@ -4,63 +4,78 @@
 }
 
 body {
-  background-color: rgb(244, 240, 249);
+  background-color: rgb(245, 183, 224);
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  width: 50%;
+
+.Container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+  width: 90%;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.Container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Container img:hover {
+  transform: scale(1);
+  box-shadow: 0 4px 8px rgb(236, 69, 211);
 }
 
 h1 {
   width: fit-content;
-  margin-top: 20px auto 0 auto;
+  margin: 20px auto;
+  text-align: center;
+}
+
+p {
+  width: fit-content;
+  margin: 10px auto;
   text-align: center;
   padding: 10%;
 }
 
-
-.proteinkällan 
-{
-  width: 100%;
+h3 {
+  width: fit-content;
+  margin: 10px auto;
+  text-align: center;
+  padding: 2px;
 }
-.links
-{
+
+.links {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   list-style-type: none;
   margin: 0;
-  gap: 10px;
-  font-size: 35px;
+  gap: 7px;
+  font-size: 20px;
 }
-  
-
-
-
+.links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 8px;
+}
 .meny {
-    background-color: aquamarine;
-    color: aliceblue;
-    display: flex;  
-    height: 75px;
-    align-items: center;
-    padding: 10px;
- 
+  background-color: rgb(70, 70, 70);
+  color: aliceblue;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  padding: 8px;
 }
 
-.hero {
-  height: 600px;
-  background-image: url("bild1.webp");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 80px;
-  color: white;
-  position: relative;
+.meny img {
+  margin-right: 30px;
+  width: 40px;
+  height: 40px;
 }
