@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
+    .roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proteinkällan</title>
@@ -61,41 +69,36 @@
       </section>
 
       <div class="Konto-container">
-        <h1>Registrera dig</h1>
+        <h1>Kontakta oss</h1>
 
         <form class="Konto-register" action="/register" method="post">
+
           <label>
-            Förnamn
-            <input type="text" name="firstName" required />
+            Ärende
+            <input type="text" name="text" required placeholder="text"/>
           </label>
 
           <label>
-            Efternamn
-            <input type="text" name="lastName" required />
-          </label>
-
-          <label>
-            Telefon
-            <input type="telefon" name="telefon" required />
+            Medelande
+            <input type="text" name="text" required placeholder="text"/>
           </label>
 
           <label>
             Epost
-            <input type="email" name="email" required />
+            <input type="email" name="email" required placeholder="namn@doman.se"/>
           </label>
+
+
 
           <label>
-            Lösenord
-            <input type="password" name="password" required />
+            Telefon
+           <input type="tel" name="Telefon" required placeholder="[0-9]" required />
           </label>
+          
 
-          <button type="submit" class="btn-primary">Skapa konto</button>
+          <button type="submit" class="btn-primary">Skicka</button>
         </form>
 
-        <p class="Redan-konto">
-          Har du redan konto?
-          <a href="Konto-login.html">Logga in här</a>
-        </p>
       </div>
     </main>
 

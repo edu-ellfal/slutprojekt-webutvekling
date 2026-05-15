@@ -29,6 +29,7 @@ body {
   margin: 0;
   gap: 7px;
   font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .links a {
@@ -368,19 +369,33 @@ a.btn-primary {
   padding: 15px;
 }
 
+/* Definition av animation /
+@keyframes kassa-puls {
+  from {
+    background-color: aqua;
+    transform: scale(1);
+  }
+  to {
+    background-color: #efb6ed;
+    transform: scale(1.05);
+  }
+}
+
 .kassa-check {
   width: 100%;
   margin: auto;
   padding: 15px;
   border-radius: 999px;
   border: none;
-  background: rgb(240, 147, 241);
-  background-color: aqua;
-  animation: färgbyte 3s infinite alternate;
   color: rgb(0, 0, 0);
   font-weight: 600;
   cursor: pointer;
+  / Animation kopplad */
+  animation: kassa-puls 2s infinite alternate ease-in-out;
+  display: block; 
 }
+
+
 
 table {
   width: 90%;
@@ -416,6 +431,18 @@ tfoot {
     rgba(115, 0, 99, 1) 100%
   );
   font-weight: bold;
+}
+
+input:focus:invalid {
+  outline: none;
+  border: 2px solid #ff4d4d;
+  box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+}
+
+input:focus:valid {
+  outline: none;
+  border: 2px solid #2ecc71;
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
 }
 
 
