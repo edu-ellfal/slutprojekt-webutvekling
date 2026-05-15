@@ -369,7 +369,6 @@ a.btn-primary {
   padding: 15px;
 }
 
-/* Definition av animation /
 @keyframes kassa-puls {
   from {
     background-color: aqua;
@@ -390,12 +389,10 @@ a.btn-primary {
   color: rgb(0, 0, 0);
   font-weight: 600;
   cursor: pointer;
-  / Animation kopplad */
-  animation: kassa-puls 2s infinite alternate ease-in-out;
   display: block; 
+  /* Här anropas animationen */
+  animation: kassa-puls 2s infinite alternate ease-in-out;
 }
-
-
 
 table {
   width: 90%;
@@ -446,5 +443,4 @@ input:focus:valid {
 }
 
 
-
-@media (max-width: 768px); {}
+@media (max-width: 768px) {}
