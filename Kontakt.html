@@ -56,67 +56,47 @@
       </nav>
     </header>
     <main>
-      <div class="proteinkällan">
-        <img src="bilder/IMG_6598.jpg" alt="proteinkällan" />
-      </div>
-
-      <div class="proteinkällan">
-        <img src="bilder/reklam5.png" alt="reklam" />
-      </div>
-
-      <div class="reklam">
-        <img src="bilder/reklam.png" alt="reklam" />
-        <img src="bilder/reklan2.png" alt="reklam" />
-        <img src="bilder/reklam3.png" alt="reklam" />
-        <img src="bilder/reklam4.png" alt="reklam" />
-      </div>
-
-      <div class="proteinkällan">
-        <img src="bilder/hel1.jpg" alt="reklam" />
-        <img src="bilder/hel2.jpg" alt="reklam" />
-      </div>
-
-      <h2>Populära produkter</h2>
-      <div class="hem">
-        <img src="bilder/SETCREATINEGUMMIES+1.webp" />
-        <img src="bilder/ö.webp" />
-        <img src="bilder/m.webp" />
-        <img src="bilder/g.webp" />
-        <img src="bilder/5995-Whey-801kgTripleClassic.webp" />
-        <img
-          src="bilder/6409-12R_Chained_Nutrition_BCAA_Hardcore_Strawberry_nov20.webp"
-        />
-        <img src="bilder/66565.webp" />
-        <img src="bilder/c.webp" />
-        <img src="bilder/SETCREATINEGUMMIES+1.webp" />
-        <img src="bilder/ö.webp" />
-        <img src="bilder/m.webp" />
-        <img src="bilder/g.webp" />
-        <img src="bilder/5995-Whey-801kgTripleClassic.webp" />
-        <img
-          src="bilder/6409-12R_Chained_Nutrition_BCAA_Hardcore_Strawberry_nov20.webp"
-        />
-        <img src="bilder/66565.webp" />
-        <img src="bilder/c.webp" />
-      </div>
-
-      <h1>
-        Välkommen till Proteinbolaget, din webbshop för en starkare livsstil.
-      </h1>
-      <p>
-        Här hittar du allt du behöver för att ta din träning till nästa nivå,
-        oavsett om du är nybörjare eller erfaren atlet. Vi erbjuder ett noggrant
-        utvalt sortiment av träningskläder som kombinerar stil och funktion,
-        högkvalitativa redskap för både hemmet och gymmet, samt kosttillskott
-        som hjälper dig att nå dina mål snabbare. Hos Proteinkällan står
-        kvalitet, prestation och motivation i fokus. Vi vill göra det enkelt för
-        dig att investera i din hälsa och utveckling, med produkter du kan lita
-        på och inspiration som driver dig framåt.
-      </p>
-
       <section class="hero">
         <div class="hero-img"></div>
       </section>
+
+      <div class="Konto-container">
+        <h1>Registrera dig</h1>
+
+        <form class="Konto-register" action="/register" method="post">
+          <label>
+            Förnamn
+            <input type="text" name="firstName" required />
+          </label>
+
+          <label>
+            Efternamn
+            <input type="text" name="lastName" required />
+          </label>
+
+          <label>
+            Telefon
+            <input type="telefon" name="telefon" required />
+          </label>
+
+          <label>
+            Epost
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Lösenord
+            <input type="password" name="password" required />
+          </label>
+
+          <button type="submit" class="btn-primary">Skapa konto</button>
+        </form>
+
+        <p class="Redan-konto">
+          Har du redan konto?
+          <a href="Konto-login.html">Logga in här</a>
+        </p>
+      </div>
     </main>
 
     <footer class="footer">
@@ -141,7 +121,6 @@
         <div class="footer-section">
           <h3>Kontakt</h3>
           <a>Email: info@proteinbolaget.se</a>
-
           <a>Telefon: 070-123 45 67</a>
           <a>Instagram: @proteinbolaget</a>
           <a>Facebook: Proteinbolaget</a>
